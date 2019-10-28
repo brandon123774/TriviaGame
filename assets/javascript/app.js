@@ -59,6 +59,8 @@ function displayResults()   {
     });
 
     //Need to display the score now
+    resultsArray.innerHTML = "$(numberCorrect) out of $(triviaQuestion.length)";
+}
 
                                     
                                                     
