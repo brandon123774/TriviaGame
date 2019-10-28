@@ -11,23 +11,33 @@
     
     <title>Trivia Game</title>
 </head>
+
 <body>
+
     <h1 id= "banner">Trivia Game</h1>
 
     <div id = "container">
-        <div id="timer">Time Remaining: </div>
-
-        <p id="question"></p>
+        <div id="game">
+            <p id="remaining-time">Time Remaining: <span id= "timer"></span></p>
+            <p id="question"></p>
+            </div>
+            <div id="answer">
+            </div>
+        </div>
 
         <div class="buttons"></div>
-            <button id="button1"><span id="A"></span></button>
-            <button id="button2"><span id="B"></span></button>
-            <button id="button3"><span id="C"></span></button>
-            <button id="button4"><span id="D"></span></button>
+            <button id="button1"><span id="A">A</span></button>
+            <button id="button2"><span id="B">B</span></button>
+            <button id="button3"><span id="C">C</span></button>
+            <button id="button4"><span id="D">D</span></button>
         </div>
-        <button id ="Submit"></button>
-
+        
     </div>
+            <div>
+                <button id ="Submit">Submit</button>
+
+            </div>
+
     <!-- //linked to js file -->
     <script src="assets/javascript/app.js"> </script>
     <!-- //linked to jquery site -->
