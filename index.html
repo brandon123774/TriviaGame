@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- //linked to bootstrap site -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- //linked to css style sheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <title>Trivia Game</title>
 </head>
 
 <body>
 
-    <h1 id= "banner">Trivia Game</h1>
-
-    <div id = "container">
-        <div id="game">
-            <p id="remaining-time">Time Remaining: <span id= "timer"></span></p>
-            <p id="question"></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Trivia Game</h1>
+                <h3>Answer the questions before the time runs out!</h3>
             </div>
-            <div id="answer">
-            </div>
-        </div>
 
-        <div class="buttons"></div>
-            <button id="button1"><span id="A">A</span></button>
-            <button id="button2"><span id="B">B</span></button>
-            <button id="button3"><span id="C">C</span></button>
-            <button id="button4"><span id="D">D</span></button>
+            <div class="scoreboard col-md-6">
+                <p> Game will end in: 
+                    <span id="timer"> </span> Seconds</p>
+                <br>
+                <div id="results"></div>
+                <br>
+                <button id="submit">Submit Your Answers Here</button>
+            </div>
+
+            <!-- Quiz -->
+            <div class="trivia col-sm-6">
+                <div id="trivia"></div>
+            </div>
+
+            
         </div>
-        
     </div>
-            <div>
-                <button id ="Submit">Submit</button>
 
-            </div>
+
 
     <!-- //linked to js file -->
     <script src="assets/javascript/app.js"> </script>
     <!-- //linked to jquery site -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  
+
 </body>
+
 </html>
